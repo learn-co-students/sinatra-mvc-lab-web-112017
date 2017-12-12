@@ -1,8 +1,7 @@
 class PigLatinizer
 
-  def to_pig_latin(words)
-    w_arr = words.split(" ")
-    newguy = w_arr.map do |word|
+  def to_pig_latin(words)  
+    words.split(" ").map do |word|
       piglatinize(word)
     end.join(" ")
   end
